@@ -33,6 +33,7 @@
   },
   "devDependencies": {
     "@storybook/addon-actions": "^5.1.11",
-    "@storybook/react": "^5.1.11"
+    "@storybook/react": "^5.1.11",
+    "eslint-config-airbnb": "^18.0.1"
   }
 }

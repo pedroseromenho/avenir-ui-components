@@ -1,0 +1,14 @@
+@import "~styles/config";
+
+.container{
+    &__primary{
+        background: transparent;
+        color: $color-dark;
+        font-size: 1rem;
+        font-weight: $font-bold;
+        padding: 10px 20px;
+        letter-spacing: 0.2px;
+        border: 1px solid $color-dark;
+        outline: none;
+    }
+}
