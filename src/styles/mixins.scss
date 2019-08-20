@@ -1,0 +1,44 @@
+@mixin fit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  @mixin sr {
+    position: absolute;
+    padding: 0;
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    clip-path: inset(0 0 99.9% 99.9%);
+  }
+  
+  @function strip-unit($number) {
+    @if type-of($number) == 'number' and not unitless($number) {
+      @return $number / ($number * 0 + 1);
+    }
+  
+    @return $number;
+  }
+  
+  @mixin retina {
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+      only screen and (-o-min-device-pixel-ratio: 13/10),
+      only screen and (min-resolution: 120dpi) {
+      @content;
+    }
+  }
+
+  @mixin js-only {
+    html:not(:global(.no-js)) & {
+      @content;
+    }
+  }
+  
+  @mixin no-js {
+    html:not(:global(.js)) & {
+      @content;
+    }
+  }
