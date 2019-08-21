@@ -2,26 +2,41 @@
 
 .container{
     &__default,
-    &__primary{
+    &__primary,
+    &__secondary{
         font-size: 1rem;
         padding: 5px 10px;
         letter-spacing: 0.2px;
         outline: none;
         cursor: pointer;
         border-radius: 5px;
+        svg{
+            margin-right: 7px;
+        }
     }
     &__default{
         background: transparent;
         color: $color-dark;
-        border: 1px solid $color-dark;
-        font-weight: $font-bold;
+        border: 0.5px solid $color-dark;
+        opacity: 0.5;
         &:hover{
+            opacity: 0.8;
             background: $color-dark;
             color: $color-white;
             transition: all 0.2s ease-in;
         }
     }
     &__primary{
+        background: $color-red;
+        color: $color-white;
+        border: 1px solid $color-red;
+        &:hover{
+            background: $color-white;
+            color: $color-red;
+            transition: all 0.2s ease-in;
+        }
+    }
+    &__secondary{
         background: $color-green;
         color: $color-white;
         border: 1px solid $color-green;
@@ -30,5 +45,16 @@
             color: $color-green;
             transition: all 0.2s ease-in;
         }
+    }
+    &__small{
+        font-size: $font-size;
+    }
+    &__medium{
+        font-size: $font-size-medium;
+        font-weight: $font-bold; 
+    }
+    &__big{
+        font-size: $font-size-max;
+        font-weight: $font-bold;
     }
 }
