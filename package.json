@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.21",
+    "@storybook/react": "^5.1.11",
+    "faker": "^4.1.0",
     "node-sass": "^4.12.0",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
@@ -33,7 +36,6 @@
   },
   "devDependencies": {
     "@storybook/addon-actions": "^5.1.11",
-    "@storybook/react": "^5.1.11",
     "eslint-config-airbnb": "^18.0.1"
   }
 }

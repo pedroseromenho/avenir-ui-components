@@ -1,14 +1,34 @@
 @import "~styles/config";
 
 .container{
+    &__default,
     &__primary{
+        font-size: 1rem;
+        padding: 5px 10px;
+        letter-spacing: 0.2px;
+        outline: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    &__default{
         background: transparent;
         color: $color-dark;
-        font-size: 1rem;
-        font-weight: $font-bold;
-        padding: 10px 20px;
-        letter-spacing: 0.2px;
         border: 1px solid $color-dark;
-        outline: none;
+        font-weight: $font-bold;
+        &:hover{
+            background: $color-dark;
+            color: $color-white;
+            transition: all 0.2s ease-in;
+        }
+    }
+    &__primary{
+        background: $color-green;
+        color: $color-white;
+        border: 1px solid $color-green;
+        &:hover{
+            background: $color-white;
+            color: $color-green;
+            transition: all 0.2s ease-in;
+        }
     }
 }
