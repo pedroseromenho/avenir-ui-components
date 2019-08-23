@@ -31,4 +31,14 @@
             transition: all 0.2s ease-in;
         }
     }
+    &__light{
+        background: transparent;
+        color: $color-dark;
+        border: none;
+        cursor: pointer;
+        &:hover{
+            background: $color-light;
+            transition: all 0.2s ease-in;
+        }
+    }
 }

@@ -13,6 +13,8 @@ function Button({
         return s.container__primary;
       case 'secondary':
         return s.container__secondary;
+      case 'light':
+        return s.container__light;
       default:
         return s.container__default;
     }
