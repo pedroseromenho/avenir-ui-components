@@ -48,12 +48,14 @@ Button.propTypes = {
   text: PropTypes.string,
   type: PropTypes.string,
   icon: PropTypes.string,
+  size: PropTypes.string,
 };
 
 Button.defaultProps = {
   text: '',
   type: '',
   icon: '',
+  size: '',
 };
 
 export default Button;
