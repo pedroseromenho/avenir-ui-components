@@ -6,9 +6,7 @@ $container-gutter-tablet: 50px;
 $container-gutter-desktop: 70px;
 
 // Fonts
-$font-text: 'TitilliumWeb', verdana, sans-serif;
-$font-heading: 'TitilliumWeb', verdana, sans-serif;
-
+$font-text: 'Titillium Web', verdana, sans-serif;
 $font-size: 1rem;
 $font-size-max: 2rem;
 $font-size-medium: 1.5rem;
@@ -63,6 +61,7 @@ $max-375: 374px;
 $max-360: 359px;
 
 // Predefined breakpoints
-$min-mobile: "screen and (max-width: " + $min-420 + ")";
+$min-mobile: $min-420;
+// $min-mobile: "screen and (max-width: " + $min-420 + ")";
 $min-tablet: "screen and (max-width: " + $min-720 + ")";
 $min-desktop:"screen and (max-width: " + $min-1080+ ")";

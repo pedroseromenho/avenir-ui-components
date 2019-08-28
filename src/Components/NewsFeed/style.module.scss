@@ -7,19 +7,50 @@
     border-radius: 3px;
     max-width: 600px;
     display: flex;
-    border: 1px solid $color-light;
-    &__img{
-        display: block;
-        max-width: 150px;
-    }
+    flex-direction: row;
+    border-bottom: 1px solid $color-light;
+    font-family: $font-text;
+    height: 80px;
     &__actions{
         position: absolute;
-        bottom: 1rem;
-        right: 1rem;
+        top: 5px;
+        left: 10px;
     }
     &__content{
+        flex: 2;
+        margin-top: 20px;
         &__title{
             margin-top: 0;
+            @media screen and (max-width: $min-mobile){
+                font-size: $font-size-min;
+                line-height: 1.2rem;
+                
+                display: inline-block;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+        }
+        &__date{
+            font-size: 0.7rem;
+            position: absolute;
+            bottom: 10px;
+            left: 15px;
+        }
+        &__excerpt{
+            @media screen and (max-width: $min-mobile){
+                display: none;
+            }
+        }
+    }
+    &__img{
+        flex: 1;
+        img{
+            display: block;
+            max-width: 150px;
+            width: 100%;
         }
     }
 }

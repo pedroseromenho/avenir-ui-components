@@ -2,13 +2,16 @@
 
 .container{
     &__default,
+    &__outlined,
     &__primary,
-    &__secondary{
+    &__secondary,
+    &__icon{
         font-size: 1rem;
         padding: 5px 10px;
         letter-spacing: 0.2px;
         outline: none;
         cursor: pointer;
+        font-family: $font-text;
         border-radius: 5px;
         svg{
             margin-right: 7px;
@@ -17,8 +20,15 @@
     &__default{
         background: transparent;
         color: $color-dark;
-        border: 0.5px solid $color-dark;
-        opacity: 0.5;
+        border: none;
+        opacity: 0.9;
+    }
+    &__outlined{
+        background: transparent;
+        color: $color-dark;
+        border: none;
+        opacity: 0.9;
+        box-shadow: 2px 1px 10px 2px rgba(0, 0, 0, 0.2);
         &:hover{
             opacity: 0.8;
             background: $color-dark;
@@ -56,5 +66,31 @@
     &__big{
         font-size: $font-size-max;
         font-weight: $font-bold;
+    }
+    &__iconSmall,
+    &__iconMedium,
+    &__iconBig{
+        border-radius: 100%;
+        position: relative;
+        svg{
+            margin: 0;
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &__iconSmall{
+        width: 30px;
+        height: 30px;
+    }
+    &__iconMedium{
+        width: 40px;
+        height: 40px;
+    }
+    &__iconBig{
+        width: 50px;
+        height: 50px;
     }
 }
